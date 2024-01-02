@@ -1,1 +1,1 @@
-![Screenshot](docs/images/1.png)
+![Screenshot](/docs/images/1.png)
