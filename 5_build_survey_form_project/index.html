@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html en="lang">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Coding Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out this coding survey</p>
+    <form id="survey-form" method="post" action='https://codenews.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="name" type="text" value="name" placeholder="Enter name" required="" /></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" value="email" placeholder="Enter email" required="" /></label>
+        <label id="number-label" for="age"> Age <input id="number" name="number" type="number" value="number" min="3" max="120" placeholder="Age" required="" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Role</legend>
+        <div>
+          <input id="role-beginner" type="radio" value="role-beginner" name="role" class="inline" checked /> 
+          <label for="role-beginner">beginner</label>
+        </div>
+        <div>
+          <input id="role-entry" type="radio" value="role-entry" name="role" class="inline" />
+          <label for="role-entry"> entry</label>
+        </div>
+        <div>
+          <input id="role-junior" type="radio" value="role-junior" name="role" class="inline" />
+          <label for="role-junior"> junior</label>
+        </div>
+        <div>
+          <input id="role-senior" type="radio" value="role-senior" name="role" class="inline" />
+        <label for="role-senior"> senior</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Which of these languages do you most prefer?
+          <select id="dropdown" value="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">python</option>
+            <option value="2">javascript</option>
+            <option value="3">rust</option>
+            <option value="4">c++</option>
+          </select>
+        </label>
+
+        <fieldset>
+        <legend>Which language news would you like to recieve?</legend>
+            <label for="python">
+                python 
+                <input class="inline" id="python" value="python" type="checkbox" name="python" /> 
+            </label>
+              <label for="javascript">
+                javascript
+                <input class="inline" id="javascript" value="javascript" type="checkbox" name="javascript" /> 
+            </label>
+              <label for="rust">
+                rust
+                <input class="inline" id="rust" value="rust" type="checkbox" name="rust" /> 
+            </label>
+              <label for="c++">
+               c++ 
+                <input class="inline" id="c++" value="c++" type="checkbox" name="c++" /> 
+            </label>
+            <label for="surprise">
+                    surprise me 
+                    <input class="inline" id="surprise" value="surprise" type="checkbox" name="surprise" /> 
+                </label>
+        </fieldset>
+
+      <fieldset>
+        <label for="bio">Tell us about a project you working on?
+          <textarea id="bio" name="bio" value="bio" rows="3" cols="30" placeholder="I am building..."></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="submit" />
+  </form> 
+  </body>
+</html>
+
+
+
